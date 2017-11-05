@@ -8,6 +8,10 @@ $CMP CP2105
 D Interface USB UART [QFN-24]
 $ENDCMP
 #
+$CMP CP2114
+D USB Audio to I2S Bridge with UART [QFN-32]
+$ENDCMP
+#
 $CMP CP2130
 D Interface USB SPI [QFN-24]
 $ENDCMP

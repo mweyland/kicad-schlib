@@ -52,4 +52,8 @@ $CMP PTN3363
 D LevelShift TMDS DVI/HDMI [QFN-32]
 $ENDCMP
 #
+$CMP SA604AD
+D High-performance low-power FM IF system
+$ENDCMP
+#
 #End Doc Library

@@ -62,6 +62,7 @@ function main() {
     install_submodules
 
     make_fp_lib_table "fp-lib-table"
+    make_sym_lib_table "sym-lib-table"
     make_project "$PROJECT_NAME" "${PROJECT_NAME}.pro"
 }
 
@@ -81,7 +82,19 @@ function make_fp_lib_table() {
         filename="$(basename "$i")"
         libname="${filename/%.pretty/}"
 
-        echo "  (lib (name "$libname")(type KiCad)(uri \"\$(KIPRJMOD)/$i\")(options \"\")(descr \"\"))" >>"$1"
+        echo "  (lib (name \"$libname\")(type KiCad)(uri \"\$(KIPRJMOD)/$i\")(options \"\")(descr \"\"))" >>"$1"
+    done
+    echo ")" >>"$1"
+}
+
+function make_sym_lib_table() {
+    echo "(sym_lib_table" > "$1"
+    find schlib/library -maxdepth 1 -name '*.lib' -type f -print0 | sort -zfV |
+    while read -r -d $'\0' i; do
+        filename="$(basename "$i")"
+        libname="${filename/%.lib/}"
+
+        echo "  (lib (name \"$libname\")(type Legacy)(uri \"\$(KIPRJMOD)/$i\")(options \"\")(descr \"\"))" >>"$1"
     done
     echo ")" >>"$1"
 }

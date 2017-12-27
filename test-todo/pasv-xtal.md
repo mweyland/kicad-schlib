@@ -8,5 +8,4 @@
 
 ## Part 'XTAL-FOX-FX135A'
 - [ ] Footprint check: Footprint file '../pcblib/manuf.pretty/FOX-FX135A.kicad_mod' does not exist
-- [ ] Datasheet check: link 'http://www.foxonline.com/pdfs/FX135.pdf' BROKEN, error code '404'
 

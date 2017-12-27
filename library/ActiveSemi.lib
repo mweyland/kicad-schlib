@@ -4,10 +4,10 @@ EESchema-LIBRARY Version 2.3
 # ACT8945A
 #
 DEF ACT8945A U 0 40 Y Y 1 F N
-F0 "U" 0 1350 60 H V C CNN
-F1 "ACT8945A" 0 1250 60 H V C CNN
-F2 "IPC7351-Nominal:QFN40P500X500X80-41" 0 -1800 60 H I C CNN
-F3 "http://www.active-semi.com/sheets/ACT8945A_Datasheet.pdf" 0 -1900 60 H I C CNN
+F0 "U" 0 1350 50 H V C CNN
+F1 "ACT8945A" 0 1250 50 H V C CNN
+F2 "IPC7351-Nominal:QFN40P500X500X80-41" 0 -1800 50 H I C CNN
+F3 "http://www.active-semi.com/sheets/ACT8945A_Datasheet.pdf" 0 -1900 50 H I C CNN
 F4 "ACT8945AQJ{vout}05-T" 0 -2100 50 H I C CNN "MPN"
 F5 "Active-Semi" 0 -2000 50 H I C CNN "Manuf"
 DRAW
